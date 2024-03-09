@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="statusBarView" type="id"/>
+    <item name="fragmentContainer" type="id"/>
+    <item name="toolbar" type="id"/>
+    <item name="tablayout" type="id"/>
+    <item name="lastClickTime" type="id"/>
+    <item name="alwaysLifecycleOwner" type="id"/>
+    <item name="pressScaleView" type="id"/>
+    <item name="anchorViewInfo" type="id"/>
+    <item name="keyboardBackground" type="id"/>
+    <item name="keyboardBackgroundDData" type="id"/>
+    <item name="stickListener" type="id"/>
+    <item name="stickFinder" type="id"/>
+</resources>

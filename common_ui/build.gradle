@@ -1,0 +1,53 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+
+android {
+    namespace 'com.gooey.ui'
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 24
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    lintOptions {
+        abortOnError false
+        lintConfig file(rootProject.rootDir.path + '/lint.xml')
+    }
+
+    dataBinding {
+        enabled true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    api "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
+    api 'androidx.annotation:annotation:1.1.0'
+    api "androidx.recyclerview:recyclerview:1.1.0"
+    api 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+    implementation project(path: ':common')
+}

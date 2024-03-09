@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="toolbarTextColor">#fff</color>
+    <color name="theme_color_Primary">#FF3A3A</color>
+    <color name="theme_color_PrimaryAccent">#ffce3d3e</color>
+    <color name="theme_color_PrimaryDark">#A53E37</color>
+    <color name="toolbarSubTextColor">#66ffffff</color>
+</resources>

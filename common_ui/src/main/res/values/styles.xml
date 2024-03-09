@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Base.AppTheme" />
+
+    <style name="Base.AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/theme_color_Primary</item>
+        <item name="colorPrimaryDark">@color/theme_color_PrimaryDark</item>
+        <item name="colorAccent">@color/theme_color_PrimaryAccent</item>
+        <item name="toolbarStyle">@style/ToolbarStyle</item>
+        <item name="actionBarSize">@dimen/toolbarHeight</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+        <item name="android:disabledAlpha">0.5</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:fadingEdgeLength">0dp</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="actionMenuTextColor">#fff</item>
+        <item name="actionModeStyle">@style/CustomActionMode</item>
+    </style>
+
+    <style name="CustomActionMode" parent="Base.Widget.AppCompat.ActionMode">
+        <item name="titleTextStyle">@style/CustomActionMode.ActionBar.Title</item>
+        <item name="closeItemLayout">@layout/action_mode_back</item>
+    </style>
+
+    <style name="CustomActionMode.ActionBar.Title" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/toolbarTitleSize</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView" />
+
+    <style name="NoAnimationDialog" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+
+    <style name="ToolBar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/toolbarTextColor</item>
+        <item name="android:textSize">@dimen/toolbarTitleSize</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="ToolBar.Subtitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textColor">@color/toolbarSubTextColor</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="titleTextAppearance">@style/ToolBar.Title</item>
+        <item name="subtitleTextAppearance">@style/ToolBar.Subtitle</item>
+        <item name="actionBarItemBackground">@drawable/toolbarItemBackground</item>
+        <item name="selectableItemBackground">@drawable/toolbarItemBackground</item>
+        <item name="titleMargin">0dp</item>
+        <item name="maxButtonHeight">@dimen/toolbarHeight</item>
+    </style>
+
+    <style name="CommonBottomDialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="loadDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+    </style>
+
+    <style name="BottomDialogAnim">
+        <item name="android:windowEnterAnimation">@anim/dialog_bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_bottom_exit</item>
+    </style>
+
+    <style name="TopDialogAnim">
+        <item name="android:windowEnterAnimation">@anim/dialog_top_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_top_exit</item>
+    </style>
+
+    <style name="TransparentDialog" parent="CommonBottomDialogStyle">
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbarCreamPlaylistClassChooseRight">24dp</dimen>
+    <dimen name="toolbarHeight">52dp</dimen>
+    <dimen name="toolbarTitleSize">18sp</dimen>
+    <dimen name="toolbarTitleSizeTwoLine">17sp</dimen>
+</resources>
