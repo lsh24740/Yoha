@@ -1,6 +1,5 @@
 package com.gooey.yoha
 
-import android.content.Intent
 import android.os.Handler
 import android.os.Looper
 import android.view.View
@@ -16,11 +15,6 @@ class SplashActivity : BaseActivity() {
     private val mHandler: Handler = Handler(Looper.getMainLooper())
     override fun onViewCreated(paramView: View?) {
         super.onViewCreated(paramView)
-//        mHandler.postDelayed({
-//            startActivity(Intent(this, MainActivity::class.java))
-//            finish()
-//            overridePendingTransition(com.gooey.ui.R.anim.zoom_in, com.gooey.ui.R.anim.zoom_out)
-//        }, 500)
     }
 
     override fun onDestroy() {

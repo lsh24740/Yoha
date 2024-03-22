@@ -39,4 +39,5 @@ android {
 dependencies {
     implementation project(":common")
     implementation project(":common_ui")
+    implementation project(":core_image")
 }

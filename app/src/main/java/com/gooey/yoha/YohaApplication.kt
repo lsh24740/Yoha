@@ -5,6 +5,7 @@ import android.content.Context
 import com.blankj.utilcode.util.AppUtils
 import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.Utils
+import com.gooey.image.ImageLoader
 import com.sankuai.waimai.router.Router
 import com.sankuai.waimai.router.common.DefaultRootUriHandler
 import com.sankuai.waimai.router.components.DefaultLogger
@@ -28,6 +29,7 @@ class YohaApplication: Application() {
         LogUtils.getConfig().setLogSwitch(AppUtils.isAppDebug())
         MMKV.initialize(this as Context)
         initRouter()
+        ImageLoader.init()
     }
     private fun initRouter() {
         Debugger.setLogger(DefaultLogger())

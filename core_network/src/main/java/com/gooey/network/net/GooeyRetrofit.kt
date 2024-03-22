@@ -2,13 +2,13 @@ package com.gooey.network.net
 
 import com.blankj.utilcode.util.AppUtils
 import com.blankj.utilcode.util.EncryptUtils
+import com.gooey.common.network.retrofit.getBaseMoshi
+import com.gooey.common.network.retrofit.toJson
 import com.gooey.network.net.convert.JsonConverterFactory
 import com.gooey.network.net.convert.MoshiDecodeConverterFactory
 import com.gooey.network.net.decoder.EncryptDecoder
 import com.gooey.network.net.interceptor.HeaderInterceptor
 import com.gooey.network.net.interceptor.HttpLoggingInterceptor
-import com.gooey.network.network.retrofit.getBaseMoshi
-import com.gooey.network.network.retrofit.toJson
 import com.squareup.moshi.Moshi
 import retrofit2.Retrofit
 import java.util.Date
